@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فروشگاه اینترنتی دیجی شاپ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+   <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- هدر -->
+    <header>
+        <div class="header-container">
+            <div class="logo" id="home-btn">دیجی شاپ</div>
+            <div class="search-box">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" id="search-input" placeholder="جستجوی محصولات...">
+            </div>
+            <div class="user-actions">
+                <a href="#" id="track-order-btn"><i class="fas fa-truck"></i>پیگیری سفارش</a>
+                <a href="#" id="login-btn"><i class="fas fa-user"></i>ورود / ثبت‌نام</a>
+                <a href="#" id="cart-btn"><i class="fas fa-shopping-cart"></i>سبد خرید (<span id="cart-count">0</span>)</a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- نوار دسته‌بندی -->
+    <div class="categories">
+        <nav>
+            <ul>
+                <li><a href="#" data-category="mobile"><i class="fas fa-mobile-alt"></i> موبایل</a></li>
+                <li><a href="#" data-category="laptop"><i class="fas fa-laptop"></i> لپ‌تاپ</a></li>
+                <li><a href="#" data-category="digital"><i class="fas fa-tv"></i> کالای دیجیتال</a></li>
+                <li><a href="#" data-category="home"><i class="fas fa-home"></i> لوازم خانگی</a></li>
+                <li><a href="#" data-category="clothing"><i class="fas fa-tshirt"></i> پوشاک</a></li>
+                <li><a href="#" data-category="book"><i class="fas fa-book"></i> کتاب و تحریر</a></li>
+                <li><a href="#" data-category="sport"><i class="fas fa-running"></i> ورزش و سفر</a></li>
+                <li><a href="#" data-category="food"><i class="fas fa-utensils"></i> خوراکی</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <!-- پیام خوش‌آمدگویی -->
+    <div class="welcome-message animate__animated animate__fadeInDown">
+        <h2>به دیجی شاپ خوش آمدید!</h2>
+        <p>با بهترین قیمت‌ها و کیفیت عالی در خدمت شما هستیم</p>
+    </div>
+    
+    <!-- اسلایدر -->
+    <div class="slider">
+        <img src="https://via.placeholder.com/1200x400/388e3c/ffffff?text=دیجی+شاپ+تخفیف‌های+ویژه" alt="اسلایدر فروشگاه">
+    </div>
+    
+    <!-- محتوای اصلی -->
+    <main id="main-content">
+        <!-- بخش محصولات (به صورت داینامیک لود می‌شود) -->
+    </main>
+    
+    <!-- فوتر -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>راهنمای خرید</h3>
+                <ul>
+                    <li><a href="#">نحوه ثبت سفارش</a></li>
+                    <li><a href="#">رویه ارسال سفارش</a></li>
+                    <li><a href="#">شیوه‌های پرداخت</a></li>
+                    <li><a href="#">بازگرداندن کالا</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>خدمات مشتریان</h3>
+                <ul>
+                    <li><a href="#">پاسخ به پرسش‌های متداول</a></li>
+                    <li><a href="#">شرایط بازگرداندن کالا</a></li>
+                    <li><a href="#">حریم خصوصی</a></li>
+                    <li><a href="#">گزارش باگ سایت</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>با دیجی شاپ</h3>
+                <ul>
+                    <li><a href="#">درباره ما</a></li>
+                    <li><a href="#">تماس با ما</a></li>
+                    <li><a href="#">همکاری با ما</a></li>
+                    <li><a href="#">فرصت‌های شغلی</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>اطلاعات بیشتر</h3>
+                <ul>
+                    <li><a href="#">قوانین و مقررات</a></li>
+                    <li><a href="#">سوالات متداول</a></li>
+                    <li><a href="#">بلاگ</a></li>
+                    <li><a href="#">نقشه سایت</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            کلیه حقوق این وبسایت متعلق به دیجی شاپ می‌باشد. © ۱۴۰۲
+        </div>
+    </footer>
+    
+    <!-- سبد خرید -->
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>سبد خرید شما</h3>
+            <button class="close-cart" id="close-cart">×</button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- آیتم‌های سبد خرید با JavaScript اضافه خواهند شد -->
+        </div>
+        <div class="cart-summary">
+            <div class="cart-total">
+                <span>جمع کل:</span>
+                <span id="cart-total">۰ تومان</span>
+            </div>
+            <button class="checkout-btn"><i class="fas fa-credit-card"></i>تسویه حساب</button>
+        </div>
+    </div>
+    
+    <!-- مودال ورود -->
+    <div class="modal" id="login-modal">
+        <div class="modal-content">
+            <button class="close-modal" id="close-login">×</button>
+            <div class="modal-header">
+                <h3>ورود به حساب کاربری</h3>
+            </div>
+            <div class="modal-body">
+                <form id="login-form">
+                    <div class="form-group">
+                        <label for="login-username">نام کاربری یا ایمیل</label>
+                        <input type="text" id="login-username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="login-password">رمز عبور</label>
+                        <input type="password" id="login-password" required>
+                    </div>
+                    <button type="submit" class="submit-btn">ورود</button>
+                </form>
+                <div class="form-footer">
+                    حساب کاربری ندارید؟ <a href="#" id="show-register">ثبت‌نام کنید</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- مودال ثبت‌نام -->
+    <div class="modal" id="register-modal">
+        <div class="modal-content">
+            <button class="close-modal" id="close-register">×</button>
+            <div class="modal-header">
+                <h3>ثبت‌نام در دیجی شاپ</h3>
+            </div>
+            <div class="modal-body">
+                <form id="register-form">
+                    <div class="form-group">
+                        <label for="register-username">نام کاربری</label>
+                        <input type="text" id="register-username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-email">ایمیل</label>
+                        <input type="email" id="register-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-password">رمز عبور</label>
+                        <input type="password" id="register-password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-confirm-password">تکرار رمز عبور</label>
+                        <input type="password" id="register-confirm-password" required>
+                    </div>
+                    <button type="submit" class="submit-btn">ثبت‌نام</button>
+                </form>
+                <div class="form-footer">
+                    قبلا ثبت‌نام کرده‌اید؟ <a href="#" id="show-login">وارد شوید</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- مودال پیگیری سفارش -->
+    <div class="modal" id="track-order-modal">
+        <div class="modal-content">
+            <button class="close-modal" id="close-track-order">×</button>
+            <div class="modal-header">
+                <h3>پیگیری سفارش</h3>
+            </div>
+            <div class="modal-body">
+                <form id="track-order-form">
+                    <div class="form-group">
+                        <label for="order-id">شماره سفارش</label>
+                        <input type="text" id="order-id" placeholder="مثال: DG12345678" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="tracking-email">ایمیل یا شماره موبایل</label>
+                        <input type="text" id="tracking-email" required>
+                    </div>
+                    <button type="submit" class="submit-btn">پیگیری</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <!-- پیام موفقیت -->
+    <div class="success-message" id="success-message">
+        <i class="fas fa-check-circle"></i>
+        <span id="success-text">با موفقیت وارد شدید!</span>
+    </div>
+    
+    <!-- صفحه بارگذاری -->
+    <div class="loading-overlay" id="loading-overlay">
+        <div class="spinner"></div>
+    </div>
+    
+   <script src="./script.js"></script>
+</body>
+</html>
+
+
